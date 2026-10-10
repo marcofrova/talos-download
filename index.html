@@ -16,8 +16,8 @@
   <img class="icon" src="images/app-icon.png" alt="Talos app icon">
   <h1>Talos</h1>
   <p class="tagline">A guardian for your Mac. Free, private, no account.</p>
-  <a class="button" data-release href="https://github.com/marcofrova/talos-download/releases/latest">Download Talos for Mac</a>
-  <noscript><p class="small">JavaScript is off: open the GitHub Releases page of the download repository to get the file.</p></noscript>
+  <a class="button" href="https://github.com/marcofrova/talos-download/releases/latest/download/Talos.dmg">Download Talos for Mac</a>
+  <p class="small">The download starts right away. Then open the file <strong>Talos</strong> in your Downloads folder and follow &ldquo;First open&rdquo; below. <a data-release href="https://github.com/marcofrova/talos-download/releases/latest">All files and versions</a></p>
   <p class="small">macOS 14 or later &middot; Apple silicon and Intel &middot; free for personal use</p>
   <img class="shot" src="images/menu-armed.png" alt="The Talos menu in the menu bar while the alarm is on" width="320">
 </header>
@@ -35,13 +35,13 @@
   <h2>First open (important)</h2>
   <p>Talos is free and is <strong>not notarized by Apple</strong>, which costs a yearly fee. So macOS shows a warning the first time. This is expected. Open Talos only if you downloaded it from this page.</p>
   <ol>
-    <li>Open the <code>.dmg</code> and drag <strong>Talos</strong> onto <strong>Applications</strong>. Eject the disk image.</li>
+    <li>Open the downloaded file <code>Talos.dmg</code> (in your Downloads folder) and drag <strong>Talos</strong> onto <strong>Applications</strong>. Eject the disk image.</li>
     <li><strong>macOS 14:</strong> in Applications, right-click Talos, choose <strong>Open</strong>, then <strong>Open</strong> again.</li>
     <li><strong>macOS 15 or later:</strong> open Talos and click <strong>Done</strong>. Then go to <strong>System Settings &gt; Privacy &amp; Security</strong>, scroll to Security, click <strong>Open Anyway</strong> and confirm with your password or Touch ID.</li>
   </ol>
-  <p>You only do this once. Optional: check the download with the <code>SHA256SUMS</code> file of the release:</p>
+  <p>You only do this once. Optional: check the download. Run this, then compare the number with the line for <code>Talos-&lt;version&gt;.dmg</code> in the <code>SHA256SUMS</code> file of the release (it is the same file):</p>
   <pre><code>cd ~/Downloads
-shasum -a 256 -c SHA256SUMS --ignore-missing</code></pre>
+shasum -a 256 Talos.dmg</code></pre>
 </section>
 
 <section id="telegram">
