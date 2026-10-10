@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talos for Mac</title>
+<meta name="description" content="Talos is a free Mac menu-bar alarm: close the lid while it is armed and it sounds a siren, records video and messages you on Telegram.">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="images/app-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <img class="icon" src="images/app-icon.png" alt="Talos app icon">
+  <h1>Talos</h1>
+  <p class="tagline">A guardian for your Mac. Free, private, no account.</p>
+  <a class="button" data-release href="https://github.com/marcofrova/talos-download/releases/latest">Download Talos for Mac</a>
+  <noscript><p class="small">JavaScript is off: open the GitHub Releases page of the download repository to get the file.</p></noscript>
+  <p class="small">macOS 14 or later &middot; Apple silicon and Intel &middot; free for personal use</p>
+  <img class="shot" src="images/menu-armed.png" alt="The Talos menu in the menu bar while the alarm is on" width="320">
+</header>
+
+<section id="what">
+  <h2>What it does</h2>
+  <div class="cards">
+    <div class="card"><strong>Watches the lid.</strong> Turn the alarm on and Talos keeps your Mac awake. Closing the lid sets off a loud siren, even with the volume turned down.</div>
+    <div class="card"><strong>Tells you.</strong> It records video, shows an alert on screen and sends a message to your own Telegram bot. Photos and the Mac&rsquo;s live location are optional and off by default.</div>
+    <div class="card"><strong>Hard to switch off.</strong> Stopping the alarm always needs your administrator password, and quitting the app does not stop it.</div>
+  </div>
+</section>
+
+<section id="first-open">
+  <h2>First open (important)</h2>
+  <p>Talos is free and is <strong>not notarized by Apple</strong>, which costs a yearly fee. So macOS shows a warning the first time. This is expected. Open Talos only if you downloaded it from this page.</p>
+  <ol>
+    <li>Open the <code>.dmg</code> and drag <strong>Talos</strong> onto <strong>Applications</strong>. Eject the disk image.</li>
+    <li><strong>macOS 14:</strong> in Applications, right-click Talos, choose <strong>Open</strong>, then <strong>Open</strong> again.</li>
+    <li><strong>macOS 15 or later:</strong> open Talos and click <strong>Done</strong>. Then go to <strong>System Settings &gt; Privacy &amp; Security</strong>, scroll to Security, click <strong>Open Anyway</strong> and confirm with your password or Touch ID.</li>
+  </ol>
+  <p>You only do this once. Optional: check the download with the <code>SHA256SUMS</code> file of the release:</p>
+  <pre><code>cd ~/Downloads
+shasum -a 256 -c SHA256SUMS --ignore-missing</code></pre>
+</section>
+
+<section id="telegram">
+  <h2>Set up your Telegram bot in 5 steps</h2>
+  <p>Talos messages <em>your own</em> private bot, so nobody else sees anything. The setup assistant in the app guides you through this.</p>
+  <ol>
+    <li>In Telegram, open <strong>@BotFather</strong> and send <code>/newbot</code>.</li>
+    <li>Choose a name, then a username ending in <code>bot</code>.</li>
+    <li>Copy the token BotFather gives you and paste it into Talos. Keep it private. Click <strong>Verify</strong>.</li>
+    <li>Click <strong>Open Your Bot</strong>, press <strong>Start</strong> in Telegram, then in Talos click <strong>Find My Chat</strong> and confirm it is you.</li>
+    <li>Click <strong>Send Test Message</strong>. It must arrive on your phone. Then run the first test in daylight at low volume.</li>
+  </ol>
+</section>
+
+<section id="privacy">
+  <h2>Privacy in short</h2>
+  <ul>
+    <li>No analytics, no ads. The first time you open Talos you create a profile: only your profile name goes, once, to a small registration service run by the author, to know who and how many use Talos. No identifier of your Mac, no version, and the author cannot block or switch off your copy. Ask the author to delete your name.</li>
+    <li>Update check: About once a day, and when you choose Check for Updates…, Talos requests the latest version from its update host. You can disable automatic checks in More. The host sees your IP address and may receive app and macOS versions in technical headers; system profiling is disabled. No profile name, persistent device identifier or alert content is sent. Talos never downloads or installs updates without your approval.</li>
+    <li>Settings, logs and videos stay on your Mac. The bot token is kept in the macOS Keychain.</li>
+    <li>Messages, and photos or location if you turn them on, go only to your Telegram bot (Telegram&rsquo;s own terms apply).</li>
+    <li>Video and photos can show people. Use Talos only on your own Mac and where the law allows it.</li>
+  </ul>
+</section>
+
+<section id="support">
+  <h2>Support</h2>
+  <p>Talos is free. If it is useful to you and you wish, you can support its development with a voluntary donation: <a href="https://www.paypal.me/marcofrova" rel="noopener noreferrer">paypal.me/marcofrova</a>. It is never required and gives no extra features or guarantees.</p>
+</section>
+
+<section id="myth">
+  <h2>Why &ldquo;Talos&rdquo;?</h2>
+  <p>In Greek myth, Talos was a giant of bronze made to guard the island of Crete. Three times a day he circled its shores, watching for intruders. This app does the same job for your Mac.</p>
+</section>
+
+<footer>
+  Talos &copy; 2026 Marco Frova. All rights reserved. Free for personal use, not open source. Provided as is, without warranty.
+  The alarm is not a guarantee against theft.
+</footer>
+
+</div>
+<script src="config.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
