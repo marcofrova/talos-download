@@ -4,15 +4,15 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Talos</title>
         <item>
-            <title>1.0.5</title>
-            <pubDate>Mon, 12 Oct 2026 17:03:10 +0200</pubDate>
-            <sparkle:version>1.0.5</sparkle:version>
-            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+            <title>1.0.6</title>
+            <pubDate>Mon, 12 Oct 2026 19:10:37 +0200</pubDate>
+            <sparkle:version>1.0.6</sparkle:version>
+            <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/marcofrova/talos-download/releases/download/v1.0.5/Talos-1.0.5.dmg" length="38088688" type="application/octet-stream" sparkle:edSignature="4QDPgGaDpT90/DGrmyHYq+lEUWsdK3dcs3sQPfx70eXP54bHatcLsea17etP+jCZAEnSzQMMtPvc8tFd/5laCg=="></enclosure>
+            <enclosure url="https://github.com/marcofrova/talos-download/releases/download/v1.0.6/Talos-1.0.6.dmg" length="38128731" type="application/octet-stream" sparkle:edSignature="XhyOYoD1D0BmfsjlSRrd6DGkuOr1PrUUgQ8Uq9dm8Q73MzMC0mh06bJkrl7yx9XSougjHIza2/77C+dwr43NBg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: nzhMrpTDWh4hVu+t3K1X6pYmevfbHI71wR9xM0PiRs+8dQMY/v+a8i9ICX/HK2Opryd3NuXWhz6Mjg8Nw2s3CQ==
+edSignature: 1hPcu+5Ov61vxExVptkYoMkfgV8SRqSzz+C/VOw87Lvy2VeWsPEmukxpMipTzKMFH9Jf4vW3XkKrIDVSVzHMAA==
 length: 1048
 -->
